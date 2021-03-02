@@ -1,4 +1,4 @@
-package level1Assignment;
+package level1Assignment.DataTypes;
 
 public class Qn2DataTypes {
     public static void main(String[] args) {
