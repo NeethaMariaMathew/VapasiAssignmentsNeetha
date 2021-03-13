@@ -16,6 +16,7 @@ public class Library{
         this.furnitures = furnitures;
     }
 
+
     public List<Books> getTotalBooksInLibrary() {
         return books;
     }
@@ -35,7 +36,6 @@ public class Library{
     {
         return staffs.size();
     }
-
 
 
 }
