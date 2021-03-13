@@ -1,21 +1,41 @@
 package oopsDesign;
 
-import java.util.ArrayList;
+import java.awt.print.Book;
 import java.util.List;
 
 public class Library{
 
-    public void addBooks(Books b1)
-    {
-        College.booksList.add(b1);
+    private final List<Books> books;
+    private final List<Staff> staffs;
+    private final List<Furniture> furnitures;
+
+
+    public Library(List<Books> books, List<Staff> staffs, List<Furniture> furnitures) {
+        this.books = books;
+        this.staffs = staffs;
+        this.furnitures = furnitures;
     }
-    public void addStaff(Staff s1)
-    {
-        College.staffList.add(s1);
+
+    public List<Books> getTotalBooksInLibrary() {
+        return books;
     }
-    public void addFurniture(Furniture f1)
-    {
-        College.furnitureList.add(f1);
+
+    public List<Staff> getTotalStaffsInLibrary() {
+        return staffs;
     }
+
+    public List<Furniture> getTotalFurnituresInLibrary() {
+        return furnitures;
+    }
+    public int getCountOfTotalBooksInLibrary()
+    {
+        return books.size();
+    }
+    public int getCountOfTotalStaffInLibrary()
+    {
+        return staffs.size();
+    }
+
+
 
 }
